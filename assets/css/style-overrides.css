@@ -618,3 +618,14 @@ color: #666;
 	font-style: normal; 
 	color: #761D19; 
 }
+
+.figure img { 
+	/* images shouldn't overflow their containers */ 
+	max-width: 100%; 
+} 
+
+/* fancy captions */ 
+.figure .caption { 
+	font-style: italic; 
+	text-align: center; 
+} 
