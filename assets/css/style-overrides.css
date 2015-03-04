@@ -13,7 +13,7 @@ Fonts
 
 body,
 #book_header #tagline,
-body#main_blog div#item-header div#item-meta {
+body#main_blog div#item-header div#item-meta, #toc_sidebar .sidebar_minimiser ul li a  {
 font-family: proxima-nova,Verdana,sans-serif; 
 font-weight:200;
 }
@@ -109,7 +109,7 @@ padding:20px 20px 25px;
 /* main site */
 body,
 body#main_blog {
-background: #fff;
+	background-color: #f5f5f5; 
 }
 body#main_blog.create-blog.buddypress_page #content .padder h3,
 body#main_blog form.dir-form,
@@ -139,13 +139,14 @@ color: #fff;
 #page_wrapper {
 background: -moz-linear-gradient(center top, #FFFFFF 0%, #F4F4F4 100%) !important;
 background: linear-gradient(center top, #FFFFFF 0%, #F4F4F4 100%) !important;
-border:1px #fff solid;
+border: 1px solid #ddd; 
+border-bottom: 2px solid #ccc; 
 }
 #page_wrapper, #footer {
- -webkit-box-shadow: 1px 2px 6px #999;
--moz-box-shadow: 1px 2px 6px #999;
--khtml-box-shadow: 1px 2px 6px #999;
-box-shadow: 1px 2px 6px #999;
+ /*-webkit-box-shadow: 1px 2px 6px #999;*/
+/*-moz-box-shadow: 1px 2px 6px #999;*/
+/*-khtml-box-shadow: 1px 2px 6px #999;*/
+/*box-shadow: 1px 2px 6px #999;*/
 }
 #content {
 background:transparent !important;
@@ -282,16 +283,14 @@ Prose
 
 /* body (allow Theme Customizer to set colour for non-groupblogs) */
 body.blogtype-0 {
-background: #F7F7F7 url(../images/stripe.png) repeat;
+	background-color: #f5f5f5; 
 }
 /* body (do not allow Theme Customizer to set colour for groupblogs) */
 body.is-groupblog.blogtype-0 {
-background: url(../images/stripe.png) repeat #F7F7F7 !important;
 }
 /* group home */
 div#content.groupblogtype-0 div#item-header,
 #content.groupblogtype-0 div.item-list-tabs#object-nav {
-background: url(../images/stripe.png) repeat #F7F7F7;
 }
 /* group bg
 li.groupblogtype-0
@@ -518,6 +517,7 @@ Footer
 #footer {
 border: 1px solid #383A5F;
 font-size: 85%;
+box-shadow: none; 
 }
 #footer p {
 font-family: proxima-nova,Verdana,sans-serif; 
@@ -657,6 +657,10 @@ color: #666;
 	color: #383A5F; 
 }  
 
+#toc_sidebar .sidebar_minimiser ul li a:hover { 
+	background-color: #fafafa;
+} 
+
 #toc_sidebar .sidebar_minimiser ul li a { 
 	font-size: 100%; 
 } 
@@ -664,4 +668,14 @@ color: #666;
 #page_title h1 { 
 	font-size: 1.3em; 
 	margin-bottom: 2px; 
+} 
+
+/* minimal borders */ 
+.sidebar_minimiser, li.sidebar_header { 
+	border: 1px solid #ddd; 
+	border-bottom: 2px solid #ccc; 
+} 
+
+li.sidebar_header {
+	border-bottom: none; 
 } 
