@@ -140,7 +140,7 @@ color: #fff;
 background: -moz-linear-gradient(center top, #FFFFFF 0%, #F4F4F4 100%) !important;
 background: linear-gradient(center top, #FFFFFF 0%, #F4F4F4 100%) !important;
 border: 1px solid #ddd; 
-border-bottom: 2px solid #ccc; 
+border-bottom: 2px solid #ddd; 
 }
 #page_wrapper, #footer {
  /*-webkit-box-shadow: 1px 2px 6px #999;*/
@@ -667,7 +667,7 @@ color: #666;
 /* minimal borders */ 
 .sidebar_minimiser, li.sidebar_header { 
 	border: 1px solid #ddd; 
-	border-bottom: 2px solid #ccc; 
+	border-bottom: 2px solid #ddd; 
 } 
 
 li.sidebar_header {
@@ -676,4 +676,8 @@ li.sidebar_header {
 
 #title h1 a:focus { 
 	background-color: transparent; 
+} 
+
+#toc_header.sidebar_header h2, #comments_header.sidebar_header h2, #activity_header.sidebar_header h2 { 
+	line-height: 1.4; 
 } 
