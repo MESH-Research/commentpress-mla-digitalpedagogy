@@ -577,12 +577,6 @@ border-top: solid 1px #333;
 
 #title h1 a { }
 
-h4 {
-font-weight: bold !important;
-font-style: italic;
-font-size: 1.25em !important;
-color: #333 !important;
-}
 
 span.ibid { letter-spacing: -0.15em; padding-right: 0.15em; }
 
@@ -653,7 +647,7 @@ color: #666;
 } 
 
 .post h2, .post h3, .post h2 a:link, .post h2 a:hover, .post h2 a:visited, div#comments_sidebar .comments_container > h3 a, div#respond p a:link, div#respond p a:hover, div#respond p a:active, div#respond p a:visited, h3.activity_heading, #activity_sidebar ul.item-list.cp-recently-active li a,
-#activity_sidebar ul.item-list.cp-online-members li a, #toc_sidebar .sidebar_minimiser ul li a:hover, li.sidebar_header h2 a:hover, .post h3 a:link, .post h3 a:hover, .post h3 a:active, .post h3 a:visited { 
+#activity_sidebar ul.item-list.cp-online-members li a, #toc_sidebar .sidebar_minimiser ul li a:hover, li.sidebar_header h2 a:hover, .post h3 a:link, .post h3 a:hover, .post h3 a:active, .post h3 a:visited, .post h4, div#respond h4#respond_title { 
 	color: #383A5F; 
 }  
 
@@ -678,4 +672,8 @@ color: #666;
 
 li.sidebar_header {
 	border-bottom: none; 
+} 
+
+#title h1 a:focus { 
+	background-color: transparent; 
 } 
