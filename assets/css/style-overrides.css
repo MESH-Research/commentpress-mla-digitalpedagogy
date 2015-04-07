@@ -681,3 +681,8 @@ li.sidebar_header {
 #toc_header.sidebar_header h2, #comments_header.sidebar_header h2, #activity_header.sidebar_header h2 { 
 	line-height: 1.4; 
 } 
+
+/* h3 links should be underlined like other links */ 
+.post h3 a:link { 
+	text-decoration: underline; 
+} 
