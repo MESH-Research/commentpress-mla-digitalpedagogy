@@ -25,7 +25,6 @@ global $commentpress_core;
 if ( is_object( $commentpress_core ) ) {
 
 	?><ul id="toc_list">
-Heyo!
 
 	<?php
 

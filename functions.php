@@ -86,9 +86,8 @@ add_filter(	'cp_template_header_body', 'my_child_template_header_body' );
 add_filter('show_admin_bar', '__return_false');  
 
 
-/* We roll our own CommentpressCoreDisplay::list_pages() here so that we
- * can display a custom TOC which includes authors' names. 
- * This is getting absurdly complicated. 
+/* We roll our own CommentpressCoreDisplay::list_pages() and wp_list_pages() 
+ * here so that we can display a custom TOC that includes authors' names. 
  */  
 function mla_list_pages( $exclude_pages = array() ) {
 
@@ -113,9 +112,6 @@ function mla_list_pages( $exclude_pages = array() ) {
 		echo '<li class="page_item page-item-'.$welcome_id.'"><a href="'.get_permalink( $welcome_id ).'">'.$title_page_title.'</a></li>';
 
 	}
-
-	// get page display option
-	//$depth = $commentpress_core->db->option_get( 'cp_show_subpages' );
 
 	// ALWAYS write subpages into page, even if they aren't displayed
 	$depth = 0;
@@ -155,14 +151,26 @@ function mla_list_pages( $exclude_pages = array() ) {
 		'post_status' => 'publish' 
 	); 
 
-	wp_list_pages( $defaults ); 
-
 	// use Wordpress function to echo
-	//$pages = get_pages( $defaults );
+	$pages = get_pages( $defaults );
 
-	//$out = ''; 
-	//foreach ( $pages as $page ) { 
-		//$out .= '<li class="page"><a href=' . get_page_link( $page->ID ) . '">' . $page->post_title . '</a></li>'; 
-	//} 
-	//echo $out; 
+	$out = ''; 
+	foreach ( $pages as $page ) { 
+		if ( $page->post_parent ) { 
+			$author = get_post_meta( $page->ID, 'author', true ); 
+			$out .= sprintf( 
+				'<li class="child-page"><a href="%s">%s (%s)</a></li>', 
+				get_page_link( $page->ID ),
+				$page->post_title, 
+				$author
+			); 
+		} else { 
+		$out .= sprintf( 
+			'<li class="page"><a href="%s">%s</a></li>', 
+			get_page_link( $page->ID ),
+			$page->post_title
+		); 
+		} 
+	} 
+	echo $out; 
 }

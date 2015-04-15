@@ -686,3 +686,8 @@ li.sidebar_header {
 .post h3 a:link { 
 	text-decoration: underline; 
 } 
+
+/* hierarchy for list items generated from our custom TOC engine */ 
+#toc_sidebar .sidebar_minimiser ul li.child-page { 
+	margin-left: 20px; 
+} 
