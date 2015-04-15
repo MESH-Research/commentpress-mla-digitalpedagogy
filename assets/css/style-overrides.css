@@ -696,3 +696,8 @@ li.sidebar_header {
 .post ul li { 
 	margin-bottom: 0; 
 } 
+
+/* more space between artifacts */ 
+.post h3 { 
+	margin-top: 30px; 
+} 
