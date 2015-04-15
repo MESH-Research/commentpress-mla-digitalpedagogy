@@ -691,3 +691,8 @@ li.sidebar_header {
 #toc_sidebar .sidebar_minimiser ul li.child-page { 
 	margin-left: 20px; 
 } 
+
+/* not so much space between list items, thankyouverymuch. */ 
+.post ul li { 
+	margin-bottom: 0; 
+} 
