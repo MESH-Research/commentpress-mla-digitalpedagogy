@@ -697,8 +697,8 @@ li.sidebar_header {
 	margin-bottom: 0; 
 } 
 
-/* more space between artifacts */ 
-.post h3 { 
+/* more space between artifacts, better space around h2s */ 
+.post h2, .post h3 { 
 	margin-top: 30px; 
 } 
 
