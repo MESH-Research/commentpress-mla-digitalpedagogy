@@ -84,3 +84,85 @@ add_filter(	'cp_template_header_body', 'my_child_template_header_body' );
 
 
 add_filter('show_admin_bar', '__return_false');  
+
+
+/* We roll our own CommentpressCoreDisplay::list_pages() here so that we
+ * can display a custom TOC which includes authors' names. 
+ * This is getting absurdly complicated. 
+ */  
+function mla_list_pages( $exclude_pages = array() ) {
+
+	global $commentpress_core;
+
+	// get welcome page ID
+	$welcome_id = $commentpress_core->db->option_get( 'cp_welcome_page' );
+
+	// get front page
+	$page_on_front = $commentpress_core->db->option_wp_get( 'page_on_front' );
+
+	// print link to title page, if we have one and it's the front page
+	if ( $welcome_id !== false AND $page_on_front == $welcome_id ) {
+
+		// define title page
+		$title_page_title = get_the_title( $welcome_id );
+
+		// allow overrides
+		$title_page_title = apply_filters( 'cp_title_page_title', $title_page_title );
+
+		// echo list item
+		echo '<li class="page_item page-item-'.$welcome_id.'"><a href="'.get_permalink( $welcome_id ).'">'.$title_page_title.'</a></li>';
+
+	}
+
+	// get page display option
+	//$depth = $commentpress_core->db->option_get( 'cp_show_subpages' );
+
+	// ALWAYS write subpages into page, even if they aren't displayed
+	$depth = 0;
+
+	// get pages to exclude
+	$exclude = $commentpress_core->db->option_get( 'cp_special_pages' );
+
+	// do we have any?
+	if ( !$exclude ) { $exclude = array(); }
+
+	// exclude title page, if we have one
+	if ( $welcome_id !== false ) { $exclude[] = $welcome_id; }
+
+	// did we get any passed to us?
+	if ( !empty( $exclude_pages ) ) {
+
+		// merge arrays
+		$exclude = array_merge( $exclude, $exclude_pages );
+
+	}
+
+	$defaults = array( 
+		'sort_order' => 'ASC',
+		'sort_column' => 'menu_order, post_title',
+		'hierarchical' => 1,
+		'exclude' => implode( ',', $exclude ),
+		'include' => '',
+		'meta_key' => '',
+		'meta_value' => '',
+		'authors' => '',
+		'child_of' => 0,
+		'parent' => -1,
+		'exclude_tree' => '',
+		'number' => '',
+		'offset' => 0,
+		'post_type' => 'page',
+		'post_status' => 'publish' 
+	); 
+
+	wp_list_pages( $defaults ); 
+
+	// use Wordpress function to echo
+	//$pages = get_pages( $defaults );
+
+	//$out = ''; 
+	//foreach ( $pages as $page ) { 
+		//$out .= '<li class="page"><a href=' . get_page_link( $page->ID ) . '">' . $page->post_title . '</a></li>'; 
+	//} 
+	//echo $out; 
+}
