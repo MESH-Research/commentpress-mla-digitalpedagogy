@@ -701,3 +701,8 @@ li.sidebar_header {
 .post h3 { 
 	margin-top: 30px; 
 } 
+
+/* we shouldn't see screen reader text, anyway */ 
+.screen-reader-text { 
+	display: none; 
+} 
