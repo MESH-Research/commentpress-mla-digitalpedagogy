@@ -74,6 +74,14 @@ function cpchild_enqueue_styles() {
 add_filter( 'wp_enqueue_scripts', 'cpchild_enqueue_styles', 110 );
 
 
+/** 
+ * Enqueue custom javascript files. 
+ */ 
+function cpchild_enqueue_scripts() { 
+	wp_enqueue_script( 'cp-custom', get_stylesheet_directory_uri() . '/assets/js/cp-custom.js' ); 
+} 
+add_filter( 'wp_enqueue_scripts', 'cpchild_enqueue_scripts', 120 );
+
 
 // adding clickable MLA logo to header
 function my_child_template_header_body($path) {
