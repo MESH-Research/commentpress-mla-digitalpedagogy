@@ -652,8 +652,11 @@ color: #666;
 	color: #383A5F; 
 }  
 
-#toc_sidebar .sidebar_minimiser ul li a:hover { 
+#toc_sidebar .sidebar_minimiser ul li:hover { 
 	background-color: #fafafa;
+} 
+#toc_sidebar .sidebar_minimiser ul li a:hover { 
+	background-color: transparent; 
 } 
 
 #toc_sidebar .sidebar_minimiser ul li a { 
