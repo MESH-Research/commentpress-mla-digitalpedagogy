@@ -688,8 +688,11 @@ li.sidebar_header {
 } 
 
 /* hierarchy for list items generated from our custom TOC engine */ 
+/* and hanging indent for titles with many authors */ 
 #toc_sidebar .sidebar_minimiser ul li.child-page { 
-	margin-left: 20px; 
+	margin-left: 2em;
+	text-indent: -1em;
+	padding-left: 0.6em;
 } 
 
 /* not so much space between list items, thankyouverymuch. */ 
@@ -706,3 +709,5 @@ li.sidebar_header {
 .screen-reader-text { 
 	display: none; 
 } 
+
+
