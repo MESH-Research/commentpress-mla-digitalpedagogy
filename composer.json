@@ -1,5 +1,5 @@
 {
-  "name": "mlaa/commentpress-mla",
+  "name": "mlaa/commentpress-mla-digitalpedagogy",
   "type": "wordpress-theme",
   "require": {
     "php": ">=5.3.0",
