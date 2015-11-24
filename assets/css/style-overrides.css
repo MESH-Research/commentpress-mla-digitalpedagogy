@@ -714,4 +714,15 @@ li.sidebar_header {
 	display: none; 
 } 
 
-
+/* "Under Review" badge for new essays */
+.under-review {
+	font-weight: normal; 
+	border: 1px solid #E4F3F6;
+	border-radius: 3px;
+	padding: 1px 3px;
+	background-color: #EDF6FA;
+	color: #333;
+	font-size: 77%;
+	position: relative;
+	top: -1px;
+}

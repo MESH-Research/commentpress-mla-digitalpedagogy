@@ -155,14 +155,17 @@ function mla_list_pages( $exclude_pages = array() ) {
 	$pages = get_pages( $defaults );
 
 	$out = ''; 
+	$review_tag = '<span class="under-review">Under Review</span>';
 	foreach ( $pages as $page ) { 
 		if ( $page->post_parent ) { 
 			$author = get_post_meta( $page->ID, 'author', true ); 
+			$review = get_post_meta( $page->ID, 'review', true ); 
 			$out .= sprintf( 
-				'<li class="child-page"><a href="%s">%s (%s)</a></li>', 
+				'<li class="child-page"><a href="%s">%s (%s) %s</a></li>', 
 				get_page_link( $page->ID ),
 				$page->post_title, 
-				$author
+				$author,
+				'true' === $review ? $review_tag : ''
 			); 
 		} else { 
 		$out .= sprintf( 
