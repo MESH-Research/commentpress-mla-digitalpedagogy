@@ -726,3 +726,15 @@ li.sidebar_header {
 	position: relative;
 	top: -1px;
 }
+
+/* "Under Review" color for expiring batches */
+.expiring-batch {
+  background-color: #afa;
+  border-color: #9e9;
+}
+
+/* "Under Review" color for new batches */
+.new-batch {
+  background-color: #ee9;
+  border-color: #e9e988;
+}
