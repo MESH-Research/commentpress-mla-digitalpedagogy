@@ -14,7 +14,7 @@ Fonts
 body,
 #book_header #tagline,
 body#main_blog div#item-header div#item-meta, #toc_sidebar .sidebar_minimiser ul li a  {
-font-family: proxima-nova,Verdana,sans-serif; 
+font-family: proxima-nova,Verdana,sans-serif;
 font-weight:200;
 }
 #title h1,
@@ -57,7 +57,7 @@ ul#members-list h5,
 span.highlight,
 .item-title a,
 div#message-thread strong a {
-font-family: proxima-nova,Verdana,sans-serif; 
+font-family: proxima-nova,Verdana,sans-serif;
 }
 body.create-blog #cp-multisite-options h4,
 body#main_blog.create-blog.buddypress_page #content .padder h3,
@@ -79,7 +79,7 @@ body#main_blog div#item-header div#item-actions h3,
 #content .mu_register #cp-multisite-options h3, /* Comment form */
 div#respond h4#respond_title, /* BuddyPress Group Email Subscription compatibility */
 h3.activity-subscription-settings-title {
-font-family: proxima-nova,Verdana,sans-serif; 
+font-family: proxima-nova,Verdana,sans-serif;
 }
 .post h2 a:link,
 .post h2 a:hover,
@@ -109,7 +109,7 @@ padding:20px 20px 25px;
 /* main site */
 body,
 body#main_blog {
-	background-color: #f5f5f5; 
+	background-color: #f5f5f5;
 }
 body#main_blog.create-blog.buddypress_page #content .padder h3,
 body#main_blog form.dir-form,
@@ -139,8 +139,8 @@ color: #fff;
 #page_wrapper {
 background: -moz-linear-gradient(center top, #FFFFFF 0%, #F4F4F4 100%) !important;
 background: linear-gradient(center top, #FFFFFF 0%, #F4F4F4 100%) !important;
-border: 1px solid #ddd; 
-border-bottom: 2px solid #ddd; 
+border: 1px solid #ddd;
+border-bottom: 2px solid #ddd;
 }
 #page_wrapper, #footer {
  /*-webkit-box-shadow: 1px 2px 6px #999;*/
@@ -149,7 +149,7 @@ border-bottom: 2px solid #ddd;
 /*box-shadow: 1px 2px 6px #999;*/
 }
 #content {
-	/* why? */ 
+	/* why? */
 	/*background:transparent !important;*/
 }
 /***************** List Items ******************/
@@ -216,18 +216,18 @@ button, a.button, input[type="submit"], input[type="button"], input[type="reset"
 #book_search input#search-submit,
 #book_search input#searchsubmit {
 	color:#fff;
-	background-color: #383A5F; 
-	background-image: none; 
-	padding: 7px; 
-	font-size: 1em; 
+	background-color: #383A5F;
+	background-image: none;
+	padding: 7px;
+	font-size: 1em;
 }
-button:hover, a.button:hover, input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover, ul.button-nav li a:hover, ul.button-nav li.current a, div.generic-button a:hover, #book_header #user_links a.button:hover { 
-	background-color: #6669A2; 
-	background-image: none !important; 
-} 
-#book_search input#searchsubmit { 
-	display: none; 
-} 
+button:hover, a.button:hover, input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover, ul.button-nav li a:hover, ul.button-nav li.current a, div.generic-button a:hover, #book_header #user_links a.button:hover {
+	background-color: #6669A2;
+	background-image: none !important;
+}
+#book_search input#searchsubmit {
+	display: none;
+}
 
 #book_header #user_links a.button {
  padding:4px 10px;
@@ -284,7 +284,7 @@ Prose
 
 /* body (allow Theme Customizer to set colour for non-groupblogs) */
 body.blogtype-0 {
-	background-color: #f5f5f5; 
+	background-color: #f5f5f5;
 }
 /* body (do not allow Theme Customizer to set colour for groupblogs) */
 body.is-groupblog.blogtype-0 {
@@ -334,7 +334,7 @@ body.blogtype-0 .post.overridden_type-1 span.commenticonbox
 {
 	position: absolute;
 	margin-left: -40px;
-	margin-top: -2px;	
+	margin-top: -2px;
 	padding-right: 20px;
 	right: auto;
 }
@@ -420,7 +420,7 @@ body.blogtype-1 .post span.commenticonbox
 {
 	position: absolute;
 	margin-left: -40px;
-	margin-top: -2px;	
+	margin-top: -2px;
 	padding-right: 20px;
 	right: auto;
 }
@@ -431,7 +431,7 @@ body.blogtype-1 .post.overridden_type-0 span.commenticonbox
 {
 	position: absolute;
 	margin-left: 0;
-	margin-top: 0;	
+	margin-top: 0;
 	padding-right: 20px;
 	right: 25px;
 }
@@ -458,7 +458,7 @@ border-color: #DDD #EEE #EEE #DDD;
 -moz-border-left-colors: none;
 border-image: none;
 padding-left: 28px;
-padding: 5px; 
+padding: 5px;
 }
 #user_links {
 padding-top:4px;
@@ -518,10 +518,10 @@ Footer
 #footer {
 border: 1px solid #383A5F;
 font-size: 85%;
-box-shadow: none; 
+box-shadow: none;
 }
 #footer p {
-font-family: proxima-nova,Verdana,sans-serif; 
+font-family: proxima-nova,Verdana,sans-serif;
 color: #fff;
 }
 
@@ -585,7 +585,7 @@ div.running_header_bottom { display: none; }
 
 h3.term a { text-decoration: underline !important; }
 h3.term {
-font-family: proxima-nova,Verdana,sans-serif; 
+font-family: proxima-nova,Verdana,sans-serif;
 font-size: 1.1em;
 letter-spacing: 0.02em;
 }
@@ -594,13 +594,13 @@ letter-spacing: 0.02em;
 
 p.metadata {
 margin-top: 1.5em;
-font-family: proxima-nova,Verdana,sans-serif; 
+font-family: proxima-nova,Verdana,sans-serif;
 font-size: 0.9em;
 color: #666;
 }
 
 .invite-box {
-  padding: 15px 0; 
+  padding: 15px 0;
   margin: 20px 0;
   color: #000;
   background-color: #ECF3F6;
@@ -610,17 +610,17 @@ color: #666;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
-.invite-box p { 
+.invite-box p {
   padding-left: 15px;
   padding-right: 15px;
-} 
+}
 
 /* "Under Review" badge for new essays */
-/* using 'strong' and 'i' tags as a hack to allow 
+/* using 'strong' and 'i' tags as a hack to allow
  * non-super-admins the ability to use these tags.
- */  
+ */
 .page_item strong, #cp_book_info strong {
-	font-weight: normal; 
+	font-weight: normal;
 	border: 1px solid #E4F3F6;
 	border-radius: 3px;
 	padding: 1px 3px;
@@ -631,92 +631,92 @@ color: #666;
 	top: -1px;
 }
 
-.page_item em, #cp_book_info em { 
-	font-style: normal; 
-	color: #761D19; 
+.page_item em, #cp_book_info em {
+	font-style: normal;
+	color: #761D19;
 }
 
-.figure img { 
-	/* images shouldn't overflow their containers */ 
-	max-width: 100%; 
-} 
+.figure img {
+	/* images shouldn't overflow their containers */
+	max-width: 100%;
+}
 
-/* fancy captions */ 
-.figure .caption { 
-	font-style: italic; 
-	text-align: center; 
-} 
+/* fancy captions */
+.figure .caption {
+	font-style: italic;
+	text-align: center;
+}
 
 .post h2, .post h3, .post h2 a:link, .post h2 a:hover, .post h2 a:visited, div#comments_sidebar .comments_container > h3 a, div#respond p a:link, div#respond p a:hover, div#respond p a:active, div#respond p a:visited, h3.activity_heading, #activity_sidebar ul.item-list.cp-recently-active li a,
-#activity_sidebar ul.item-list.cp-online-members li a, #toc_sidebar .sidebar_minimiser ul li a:hover, li.sidebar_header h2 a:hover, .post h3 a:link, .post h3 a:hover, .post h3 a:active, .post h3 a:visited, .post h4, div#respond h4#respond_title { 
-	color: #383A5F; 
-}  
+#activity_sidebar ul.item-list.cp-online-members li a, #toc_sidebar .sidebar_minimiser ul li a:hover, li.sidebar_header h2 a:hover, .post h3 a:link, .post h3 a:hover, .post h3 a:active, .post h3 a:visited, .post h4, div#respond h4#respond_title {
+	color: #383A5F;
+}
 
-#toc_sidebar .sidebar_minimiser ul li:hover { 
+#toc_sidebar .sidebar_minimiser ul li:hover {
 	background-color: #fafafa;
-} 
-#toc_sidebar .sidebar_minimiser ul li a:hover { 
-	background-color: transparent; 
-} 
+}
+#toc_sidebar .sidebar_minimiser ul li a:hover {
+	background-color: transparent;
+}
 
-#toc_sidebar .sidebar_minimiser ul li a { 
-	font-size: 100%; 
-} 
+#toc_sidebar .sidebar_minimiser ul li a {
+	font-size: 100%;
+}
 
-#page_title h1 { 
-	font-size: 1.3em; 
-	margin-bottom: 2px; 
-} 
+#page_title h1 {
+	font-size: 1.3em;
+	margin-bottom: 2px;
+}
 
-/* minimal borders */ 
-.sidebar_minimiser, li.sidebar_header { 
-	border: 1px solid #ddd; 
-	border-bottom: 2px solid #ddd; 
-} 
+/* minimal borders */
+.sidebar_minimiser, li.sidebar_header {
+	border: 1px solid #ddd;
+	border-bottom: 2px solid #ddd;
+}
 
 li.sidebar_header {
-	border-bottom: none; 
-} 
+	border-bottom: none;
+}
 
-#title h1 a:focus { 
-	background-color: transparent; 
-} 
+#title h1 a:focus {
+	background-color: transparent;
+}
 
-#toc_header.sidebar_header h2, #comments_header.sidebar_header h2, #activity_header.sidebar_header h2 { 
-	line-height: 1.4; 
-} 
+#toc_header.sidebar_header h2, #comments_header.sidebar_header h2, #activity_header.sidebar_header h2 {
+	line-height: 1.4;
+}
 
-/* h3 links should be underlined like other links */ 
-.post h3 a:link { 
-	text-decoration: underline; 
-} 
+/* h3 links should be underlined like other links */
+.post h3 a:link {
+	text-decoration: underline;
+}
 
-/* hierarchy for list items generated from our custom TOC engine */ 
-/* and hanging indent for titles with many authors */ 
-#toc_sidebar .sidebar_minimiser ul li.child-page { 
+/* hierarchy for list items generated from our custom TOC engine */
+/* and hanging indent for titles with many authors */
+#toc_sidebar .sidebar_minimiser ul li.child-page {
 	margin-left: 2em;
 	text-indent: -1em;
 	padding-left: 0.6em;
-} 
+}
 
-/* not so much space between list items, thankyouverymuch. */ 
-.post ul li { 
-	margin-bottom: 0; 
-} 
+/* not so much space between list items, thankyouverymuch. */
+.post ul li {
+	margin-bottom: 0;
+}
 
-/* more space between artifacts, better space around h2s */ 
-.post h2, .post h3 { 
-	margin-top: 30px; 
-} 
+/* more space between artifacts, better space around h2s */
+.post h2, .post h3 {
+	margin-top: 30px;
+}
 
-/* we shouldn't see screen reader text, anyway */ 
-.screen-reader-text { 
-	display: none; 
-} 
+/* we shouldn't see screen reader text, anyway */
+.screen-reader-text {
+	display: none;
+}
 
 /* "Under Review" badge for new essays */
 .under-review {
-	font-weight: normal; 
+	font-weight: normal;
 	border: 1px solid #E4F3F6;
 	border-radius: 3px;
 	padding: 1px 3px;
