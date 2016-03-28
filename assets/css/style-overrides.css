@@ -709,11 +709,6 @@ li.sidebar_header {
 	margin-top: 30px;
 }
 
-/* we shouldn't see screen reader text, anyway */
-.screen-reader-text {
-	display: none;
-}
-
 /* "Under Review" badge for new essays */
 .under-review {
 	font-weight: normal;
